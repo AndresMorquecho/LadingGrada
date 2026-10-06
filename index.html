@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GRADA organiza tu liga de fútbol: equipos, jugadores, torneos, resultados, carnets y hojas de vocalía. Programa para Windows con licencia de pago único.">
+  <meta name="theme-color" content="#292521">
+  <title>GRADA · Tu liga merece jugar en primera</title>
+  <link rel="icon" href="assets/grada-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="GRADA, inicio"><img src="assets/grada-icon.svg" width="42" height="42" alt=""><span>GRADA<small>POR EXCEL PRÁCTICO</small></span></a>
+    <nav aria-label="Navegación principal"><a href="#sistema">El sistema</a><a href="#formatos">Torneos</a><a href="#preguntas">Preguntas</a></nav>
+    <a class="button small copper" href="#licencia">Conocer la licencia <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="contenido">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="square"></span> DEL BARRIO A LA FINAL</p>
+        <h1>Tu liga merece<br>jugar en <span>primera.</span></h1>
+        <p class="intro">El fútbol se vive en la cancha.<br>La organización empieza en GRADA.</p>
+        <p class="hero-detail">Equipos, torneos, resultados y documentos en un mismo programa para Windows.</p>
+        <div class="hero-actions"><a class="button dark" href="#sistema">Mira cómo funciona <span aria-hidden="true">↓</span></a><a class="text-link" href="Manual-GRADA.pdf" download>Descargar manual <span aria-hidden="true">↗</span></a></div>
+        <p class="hero-foot">PAGO ÚNICO <span>/</span> DATOS EN TU COMPUTADORA</p>
+      </div>
+      <div class="hero-art">
+        <div class="edition"><span>LA TEMPORADA ESTÁ EN TUS MANOS</span><strong>G / 01</strong></div>
+        <div class="screen"><div class="screen-top"><span class="screen-dot"></span> GRADA PARA WINDOWS <span>VISTA DEL SISTEMA</span></div><img src="assets/inicio.jpg" width="1610" height="876" alt="Pantalla real de GRADA con el próximo encuentro, calendario y goleadores" fetchpriority="high"></div>
+        <div class="match-ticket"><span class="ticket-ball" aria-hidden="true">G</span><div><strong>Que ruede el balón.</strong><span>Lo demás, bien organizado.</span></div><span class="ticket-arrow" aria-hidden="true">↗</span></div>
+        <p class="image-note">Captura real · datos de demostración</p>
+      </div>
+    </section>
+    <div class="ribbon"><div class="wrap"><span>EQUIPOS Y JUGADORES</span><span aria-hidden="true">✦</span><span>FIXTURE Y RESULTADOS</span><span aria-hidden="true">✦</span><span>CARNETS Y VOCALÍA</span><span aria-hidden="true">✦</span><span>TU LIGA, EN ORDEN</span></div></div>
+    <section id="sistema" class="section wrap">
+      <div class="section-heading"><div><p class="eyebrow">01 / CONOCE GRADA</p><h2>Cada detalle cuenta.<br>Tenlos todos a mano.</h2></div><p>Desde el primer inscrito hasta el último gol.<br>Un espacio para cada momento de tu torneo.</p></div>
+      <div class="showcase">
+        <div class="showcase-tabs" role="tablist" aria-label="Capturas del sistema">
+          <button id="tab-inicio" role="tab" aria-selected="true" aria-controls="gallery-panel" data-view="inicio">01 <span>Jornada</span></button>
+          <button id="tab-clubes" role="tab" aria-selected="false" tabindex="-1" aria-controls="gallery-panel" data-view="clubes">02 <span>Clubes</span></button>
+          <button id="tab-partido" role="tab" aria-selected="false" tabindex="-1" aria-controls="gallery-panel" data-view="partido">03 <span>Partido</span></button>
+          <button id="tab-carnets" role="tab" aria-selected="false" tabindex="-1" aria-controls="gallery-panel" data-view="carnets">04 <span>Carnets</span></button>
+        </div>
+        <div id="gallery-panel" role="tabpanel" aria-labelledby="tab-inicio" tabindex="0"><div class="gallery-caption"><strong id="gallery-title">La próxima jornada, de un vistazo.</strong><span id="gallery-description">Encuentros, goleadores y novedades de tus competiciones.</span></div><button class="screenshot-button" aria-label="Ampliar captura del sistema"><img id="gallery-image" src="assets/inicio.jpg" width="1610" height="876" alt="Centro de jornada de GRADA con datos de demostración" loading="lazy"><span>AMPLIAR CAPTURA ↗</span></button></div>
+      </div>
+      <div class="feature-row"><article><span class="feature-number">01</span><h3>Un lugar para cada club.</h3><p>Categorías, equipos y fichas de jugadores con fotografía, documento, dorsal y datos personales.</p></article><article><span class="feature-number">02</span><h3>El partido, completo.</h3><p>Marcador, goles, asistencias, tarjetas, presencia e informe. Busca al jugador y registra su acción.</p></article><article><span class="feature-number">03</span><h3>Listos para la cancha.</h3><p>Carnets con medidas y campos ajustables. Hojas de vocalía e informes para imprimir o descargar en PDF.</p></article></div>
+    </section>
+    <section id="formatos" class="formats section"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">02 / TU TORNEO, TUS REGLAS</p><h2>Así se juega.</h2></div><p>Elige el formato al crear tu competición.<br>GRADA comprueba que los equipos encajen.</p></div><div class="format-grid">
+      <article><span class="format-symbol" aria-hidden="true">A ↔ B</span><h3>Todos contra todos</h3><p>Una vuelta o ida y vuelta. Con cantidad impar de equipos, el descanso rota por jornada.</p><span class="format-tag">LIGA</span></article>
+      <article><span class="format-symbol" aria-hidden="true">A · B · C</span><h3>Grupos + eliminatorias</h3><p>Configura grupos y clasificados. El total que avanza debe permitir formar llaves completas.</p><span class="format-tag">DOS ETAPAS</span></article>
+      <article><svg class="bracket-icon" viewBox="0 0 120 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 5h29v12h25M4 29h29V17M58 17v24h28M58 41H33v-4H4M86 41h27"/><circle cx="112" cy="41" r="4" fill="currentColor"/></svg><h3>Eliminación directa</h3><p>Cuadros de 2, 4, 8, 16, 32… equipos. Llaves completas, sin descansos ni pases automáticos.</p><span class="format-tag">MANO A MANO</span></article>
+    </div></div></section>
+    <section class="section wrap start-section"><div><p class="eyebrow">03 / EL PRIMER PASO</p><h2>Abre GRADA.<br>Arma tu liga.<br><span>A jugar.</span></h2><a class="text-link" href="Manual-GRADA.pdf" download>Consulta el manual completo ↗</a></div><ol class="steps"><li><span>1</span><div><h3>Instala en Windows.</h3><p>Descarga el instalador y abre el programa. El demo dura 48 horas desde la primera apertura y no necesita internet.</p></div></li><li><span>2</span><div><h3>Activa tu licencia.</h3><p>En Configuración → Licencia, pega tu clave. La activación necesita conexión; después puedes trabajar hasta 7 días sin internet entre verificaciones.</p></div></li><li><span>3</span><div><h3>Organiza tu competición.</h3><p>Crea categorías, inscribe clubes y jugadores, define el formato y genera el fixture. Exporta respaldos para proteger tu trabajo.</p></div></li></ol></section>
+    <section id="licencia" class="license-section"><div class="wrap license-grid"><div><p class="eyebrow">GRADA / LICENCIA PARA WINDOWS</p><h2>Tu próxima temporada<br>empieza aquí.</h2><p>Un solo pago. Una computadora.<br>La gestión de tu liga, todos los días.</p><ul><li>Equipos, jugadores y categorías</li><li>Torneos, resultados y estadísticas</li><li>Carnets, vocalía y documentos PDF</li><li>Guardado local y copias de respaldo</li></ul></div><div class="purchase-card"><span class="eyebrow">EXCEL PRÁCTICO PRESENTA</span><img src="assets/grada-icon.svg" alt="" width="64" height="64"><h3>GRADA</h3><p>Gestión de ligas y torneos de fútbol</p><strong class="price" id="price-label">Licencia de pago único</strong><p id="availability">Estamos preparando el lanzamiento.</p><a class="button copper" id="checkout" aria-disabled="true" tabindex="-1">Próximamente en Hotmart</a><p class="purchase-note">Windows de 64 bits · Una computadora<br>Activación y verificación periódica por internet.</p><a class="manual-link" href="Manual-GRADA.pdf" download>Ver manual de instalación ↗</a></div></div></section>
+    <section id="preguntas" class="section wrap faq"><div><p class="eyebrow">ANTES DEL PITAZO INICIAL</p><h2>Lo que necesitas<br>saber.</h2></div><div class="questions">
+      <details><summary>¿Necesito internet todo el tiempo?</summary><p>El demo de 48 horas funciona sin conexión. La licencia de pago necesita internet para activarse y verificarse periódicamente; permite hasta 7 días sin conexión desde la última verificación correcta.</p></details>
+      <details><summary>¿Es una suscripción?</summary><p>No. La licencia es de pago único para una computadora. La verificación por internet comprueba su estado y no es una renovación de pago.</p></details>
+      <details><summary>¿Dónde se guardan mis equipos y jugadores?</summary><p>En una base de datos local de tu computadora. GRADA permite exportar y restaurar respaldos. Tus datos de la liga no se sincronizan automáticamente entre computadoras.</p></details>
+      <details><summary>¿Qué ocurre con los datos de prueba?</summary><p>El instalador incluye datos ficticios para explorar. Al activar la licencia mientras estás en ese entorno, se guarda un respaldo automático y se limpia la prueba para comenzar tu liga. También puedes hacerlo desde Configuración → Respaldos → Comenzar mi liga.</p></details>
+      <details><summary>¿Puedo imprimir carnets y hojas de vocalía?</summary><p>Sí. Elige el modelo y las medidas de los carnets, decide los datos que incluirás y revisa el PDF. La hoja de vocalía se abre desde cada encuentro. Puedes descargar los documentos o enviarlos a tu impresora.</p></details>
+      <details><summary>¿Funciona en celulares o en Mac?</summary><p>Este producto es un programa de escritorio para Windows de 64 bits. No incluye una aplicación para Android, iPhone o macOS.</p></details>
+      <details><summary>¿Qué pasa si cambio de computadora?</summary><p>Exporta un respaldo de tu liga antes de cambiar de equipo. La licencia se vincula a la instalación donde se activa; solicita al vendedor la gestión del cambio. Copiar el instalador no transfiere tus datos ni tu activación.</p></details>
+    </div></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#"><img src="assets/grada-icon.svg" width="36" height="36" alt=""><span>GRADA<small>HECHO PARA EL FÚTBOL DE NUESTRA GENTE.</small></span></a><div><span>Desarrollo: JAIMS · Excel Práctico</span><a id="support" href="Manual-GRADA.pdf">Ayuda e instrucciones ↗</a></div></footer>
+  <dialog id="image-dialog" aria-label="Captura ampliada del sistema"><button class="close-dialog" aria-label="Cerrar captura ampliada">Cerrar ×</button><img id="dialog-image" alt="Captura ampliada del sistema"><p>GRADA · Pantalla real con datos de demostración</p></dialog>
+</body>
+</html>

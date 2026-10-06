@@ -1,0 +1,39 @@
+LANDING DE GRADA - EXCEL PRÁCTICO
+
+Producto Hotmart: 8668531
+Estado inicial: presentación previa al lanzamiento, sin enlace de pago ni precio inventados.
+
+Vista local: ejecutar npm start dentro de esta carpeta y abrir http://127.0.0.1:5185.
+Es una página estática independiente del programa y del panel de licencias.
+
+PUBLICAR DESDE GITHUB EN VERCEL
+Repositorio: https://github.com/AndresMorquecho/LadingGrada
+Rama: main
+En Vercel: Add New > Project > importar AndresMorquecho/LadingGrada.
+Framework Preset: Other.
+Root Directory: ./ (la raíz del repositorio; no existe una subcarpeta landing aquí).
+Build Command: vacío.
+Install Command: vacío.
+Output Directory: .
+vercel.json ya incluye esos valores. No configurar npm run build.
+Hacer clic en Deploy. Copiar la URL HTTPS resultante en Página de producto de Hotmart.
+El proyecto puede publicarse como presentación antes de tener el enlace de pago.
+No necesita base de datos ni variables privadas. No colocar secretos de Neon, Hotmart o Resend aquí.
+El archivo .vercelignore excluye utilidades locales.
+
+DESPUÉS DE OBTENER EL ENLACE DE PAGO
+Editar config.js:
+- checkoutUrl: URL oficial de pago en Hotmart.
+- priceLabel: precio de la oferta, opcional.
+- supportEmail: correo de soporte, cuando esté definido.
+La compra permanece deshabilitada mientras checkoutUrl esté vacío.
+Conectar el enlace de pago solamente después de comprobar la entrega automática de licencias.
+
+CONTENIDO PARA HOTMART
+Subir Grada-1.0.1-x64-instalador.exe desde la carpeta release del proyecto.
+Subir Manual-GRADA.pdf como manual general. No contiene ninguna clave de cliente.
+El manual usa JAIMS como crédito de desarrollo, tomado del proyecto, y Excel Práctico como marca.
+La licencia personalizada se generará por compra en el servicio de licencias; esa integración aún está pendiente.
+
+Esta carpeta no contiene el instalador, para no duplicar su tamaño en la página.
+Las imágenes son capturas reales del sistema con datos de demostración.
