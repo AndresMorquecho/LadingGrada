@@ -1,7 +1,9 @@
 LANDING DE GRADA - EXCEL PRÁCTICO
 
 Producto Hotmart: 8668531
-Estado inicial: presentación previa al lanzamiento, sin enlace de pago ni precio inventados.
+Página pública: https://futbolgrada.vercel.app/
+Enlace de pago: https://pay.hotmart.com/B107909329H
+El botón de compra está conectado. El precio se consulta en Hotmart.
 
 Vista local: ejecutar npm start dentro de esta carpeta y abrir http://127.0.0.1:5185.
 Es una página estática independiente del programa y del panel de licencias.
@@ -21,13 +23,13 @@ El proyecto puede publicarse como presentación antes de tener el enlace de pago
 No necesita base de datos ni variables privadas. No colocar secretos de Neon, Hotmart o Resend aquí.
 El archivo .vercelignore excluye utilidades locales.
 
-DESPUÉS DE OBTENER EL ENLACE DE PAGO
+DATOS DE VENTA
 Editar config.js:
 - checkoutUrl: URL oficial de pago en Hotmart.
 - priceLabel: precio de la oferta, opcional.
 - supportEmail: correo de soporte, cuando esté definido.
 La compra permanece deshabilitada mientras checkoutUrl esté vacío.
-Conectar el enlace de pago solamente después de comprobar la entrega automática de licencias.
+La entrega automática de licencias aún está pendiente. Antes de promocionar las ventas, configurar y probar esa integración o asegurar la entrega manual de cada licencia.
 
 CONTENIDO PARA HOTMART
 Subir Grada-1.0.1-x64-instalador.exe desde la carpeta release del proyecto.
