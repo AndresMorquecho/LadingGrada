@@ -2,6 +2,6 @@
 window.GRADA_SALES = Object.freeze({
   productId: '8668531',
   checkoutUrl: 'https://pay.hotmart.com/B107909329H',
-  priceLabel: '', // Ejemplo: 'US$ 49'. El precio debe coincidir con la oferta de Hotmart.
+  priceLabel: 'US$ 25',
   supportEmail: '',
 });
